@@ -50,16 +50,22 @@ section {
     text-align: center;
 }
 #banner iframe {
-    width: 960px;
-    height: 540px;
+    max-width: 960px;
+    max-height: 540px;
+    width: 50vw;
+    height: 60vh;
     object-fit: cover;
     border-radius: 20px;
     opacity: .7;
     backdrop-filter: blur(50px);
     border: none;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1004px) {
     body {
-        font-size: 12px
+        font-size: 12px;
+    }
+    li {
+        font-size: 1rem;
     }
 }
