@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'DM Sans';
+    background: 
+    linear-gradient(to bottom, #000, #00000098 25%, transparent),
+    linear-gradient(to top, #000, #00000018, transparent),
+    url(img/background.png) top center / cover
+    ;
+}
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    align-items: center;
+    background: rgba(0, 0, 0, .6);
+    padding: 0rem 5rem;
+    color: #fff;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+section {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+#banner iframe {
+    width: 960px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: .7;
+    backdrop-filter: blur(50px);
+    border: none;
+}
