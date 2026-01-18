@@ -14,8 +14,8 @@ body {
     ;
 }
 header {
-    width: 100vw;
-    height: 10vh;
+    width: 100dvw;
+    height: 10dvh;
     display: flex;
     justify-content: space-between;
     z-index: 1000;
@@ -34,15 +34,15 @@ li {
     font-size: 2rem;
 }
 main {
-    width: 100vw;
-    height: 90vh;
+    width: 100dvw;
+    height: 90dvh;
     display: flex;
     align-items: center;
     color: #fff;
 }
 section {
-    width: 100vw;
-    height: 70vh;
+    width: 100dvw;
+    height: 70dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -57,4 +57,9 @@ section {
     opacity: .7;
     backdrop-filter: blur(50px);
     border: none;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 12px
+    }
 }
