@@ -107,10 +107,12 @@ section {
     }
     main {
         flex-direction: column-reverse;
+        height: auto;
         gap: 1rem;
     }
     .oracao {
         width: 50dvw;
+        height: auto;
     }
     .oracao p {
         font-size: 1rem;
