@@ -1,5 +1,7 @@
 const banner = document.querySelector("#banner");
-const titulo = document.querySelector("h2")
+const titulo = document.querySelector("h3");
+const hide = document.querySelector("#hide");
+const oracao = document.querySelector(".oracao");
 const data = new Date();
 const dia = data.toLocaleDateString();
 const diaSemana = data.getDay();
@@ -18,3 +20,13 @@ const hoje = misterios[diaSemana];
 
 titulo.innerHTML = `Hoje é ${hoje.nome} (${dia}), os mistérios são os ${hoje.tipo}:`;
 banner.innerHTML = `<iframe src='https://www.youtube.com/embed/${hoje.videoID}' title='Mistérios ${hoje.tipo} | Santo Terço - Frei Gilson' encrypted-media; gyroscope; picture-in-picture; referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>`;
+
+hide.addEventListener("click", () => {
+    if (oracao.style.display === "none") {
+        oracao.style.display = "flex";
+        hide.innerText = "Ocultar Oração";
+    } else {
+        oracao.style.display = "none";
+        hide.innerText = "Mostrar Oração";
+    }
+});
