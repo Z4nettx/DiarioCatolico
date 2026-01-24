@@ -111,7 +111,8 @@ section {
         gap: 1rem;
     }
     .oracao {
-        width: 50dvw;
+        width: 90dvw;
+        
         height: auto;
     }
     .oracao p {
